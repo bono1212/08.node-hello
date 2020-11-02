@@ -1,0 +1,18 @@
+<script>
+	/* *********구조분해 할당(비구조화)********** */
+
+	const Man = {
+		fname: 'bono',
+		lname: 'Kang',
+		fullName: function(){
+			return lname + fname;
+		}
+	}
+
+	var {fname, lname, fullName} = Man;
+	console.log(fname);
+	console.log(lname);
+	console.log(fullName);
+
+
+</script>

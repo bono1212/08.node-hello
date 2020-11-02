@@ -1,0 +1,22 @@
+<script>
+	//ES6의 객체 - literal객체; constructor객체
+
+	const obj = {
+		a:1,
+		b:2,
+		fn: function(){
+			return this.a + this.b;
+		}
+	}
+
+	const Hero = function () {
+		return this;
+	}
+
+	const superMan = new Hero();
+	superMan.name = "superman";
+	console.log(superMan);
+
+
+	
+</script>
